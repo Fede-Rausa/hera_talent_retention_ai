@@ -1,0 +1,9 @@
+python-dotenv
+numpy
+scipy
+pandas
+matplotlib
+streamlit
+huggingface_hub
+statsmodels
+plotly
