@@ -13,5 +13,6 @@ import numpy as np
 st.set_page_config(page_title="llm demo")
 
 
+st.write('Non è pronto, ma arriva a breve. L'interfaccia è simile a questa: https://basicchatbot-r9ttmvx3g2xskfd2fqhvdb.streamlit.app/')
 
 
