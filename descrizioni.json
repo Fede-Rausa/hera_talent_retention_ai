@@ -1,0 +1,67 @@
+[
+  {
+    "nome": "Exit Eagles",
+    "descrizione": "Exit Eagles raccoglie dipendenti che hanno deciso di lasciare l'azienda, spesso caratterizzati da un'alta autonomia e un forte desiderio di crescita personale. Le ragioni principali delle loro dimissioni includono la possibilità di sviluppare nuove competenze, il desiderio di cambiare ambito professionale o la ricerca di opportunità di lavoro che offrano un miglior equilibrio tra vita lavorativa e privata.",
+    "cluster_id": 3
+  },
+  {
+    "nome": "Cluster-8: Dimissioni Strategiche",
+    "descrizione": "Questo cluster comprende dipendenti che, dopo aver contribuito significativamente alla crescita e al successo dell'organizzazione, hanno deciso di lasciare per motivi professionali o di carriera. Molte persone in questo cluster hanno deciso di cambiare settore o di iniziare un'attività proprio per sfruttare le competenze acquisite nel loro ruolo precedente. Le dimissioni in questo cluster sono spesso volontarie e ben pianificate, riflettendo una desiderosa evoluzione personale e professionale.",
+    "cluster_id": 6
+  },
+  {
+    "nome": "Dinamiche di gruppo - Dimissioni",
+    "descrizione": "Questo cluster comprende dipendenti che hanno lasciato l'azienda dopo aver lavorato in team o gruppi. Le ragioni principali delle dimissioni sono state difficoltà nelle relazioni con i colleghi o una comunicazione inefficace all'interno del team, che ha causato tensioni e conflitti di lavoro.",
+    "cluster_id": 12
+  },
+  {
+    "nome": "Team Volontari",
+    "descrizione": "Questo cluster di dipendenti ha deciso di abbandonare l'azienda volontariamente, senza aver raggiunto un accordo di licenziamento. Potrebbero essere stati dipendenti di alto valore per la loro competenza tecnica o per la loro esperienza, ma hanno deciso di rinunciare per motivi personali o professionali. Le ragioni più ricorrenti delle sue dimissioni potrebbero essere legate a ambizioni personali, desiderio di cambiare la carriera o di cercare opportunità di lavoro migliori.",
+    "cluster_id": 1
+  },
+  {
+    "nome": "Cluster Disoccupato",
+    "descrizione": "Il Cluster Disoccupato è costituito da dipendenti che hanno deciso di abbandonare la propria posizione di lavoro, spesso a causa di fattori personali o di decisioni individuali. Le dimissioni di questo cluster tendono ad essere più personali e meno legate alle condizioni lavorative specifiche. Potrebbero essere dipendenti che cercano una nuova opportunità professionale, desiderano cambiare la propria vita personale o che semplicemente non sono soddisfatti della loro posizione attuale.",
+    "cluster_id": 5
+  },
+  {
+    "nome": "Team Dissatisfied",
+    "descrizione": "Questo cluster comprende dipendenti che hanno lasciato l'azienda a causa di una generale insoddisfazione lavorativa o ambientale. Le ragioni principali includono la mancanza di opportunità di crescita professionale, la scarsa comunicazione interna, il lento processo decisionale e l'assenza di supporto mentale e morale. Questi dipendenti desideravano un ambiente più incentivante e stimolante, ma hanno scelto di lasciare a causa delle circostanze che non soddisfacevano le loro esigenze.",
+    "cluster_id": 0
+  },
+  {
+    "nome": "Partenza Precoce",
+    "descrizione": "Dipendenti che hanno lasciato l'azienda prima che le loro competenze fossero pienamente sfruttate, spesso a causa di cambiamenti organizzativi o ambientali che non hanno soddisfatto le loro aspettative.",
+    "cluster_id": 8
+  },
+  {
+    "nome": "ExitEagle",
+    "descrizione": "Un cluster di dipendenti che hanno lasciato l'azienda nel 2021. I motivi principali delle dimissioni includono la mancanza di opportunità di crescita professionale, la sovraestensione e la scarsa comunicazione interna.",
+    "cluster_id": 2
+  },
+  {
+    "nome": "Luminari Disassociati",
+    "descrizione": "Questo cluster comprende dipendenti che hanno deciso di lasciare l'azienda. Le cause comuni delle dimissioni includono la ricerca di opportunità di crescita professionale, la volontà di lavorare in un ambiente più dinamico o il desiderio di migliorare il rapporto con la propria società di famiglia.",
+    "cluster_id": 4
+  },
+  {
+    "nome": "Cluster-9: Dissoluti Dovuti a Scadenze",
+    "descrizione": "Questo cluster comprende dipendenti che hanno deciso di lasciare l'azienda per motivi relativi a scadenze personali o professionali. Le ragioni principali di dimissioni in questo cluster potrebbero includere: l'esaurimento di carriera o aspettative professionali, la desideriosità di un cambiamento nella propria vita personale o una necessità di un cambio di ambiente lavorativo. Questo tipo di dimissioni è caratterizzato da una scelta volenterosa e consapevole dei dipendenti, che stanno prendendo decisioni importanti per il proprio futuro.",
+    "cluster_id": 11
+  },
+  {
+    "nome": "Team Breakers",
+    "descrizione": "Questo cluster comprende dipendenti che hanno lasciato l'azienda dopo aver lavorato insieme in un team o in un progetto specifico. Le cause delle dimissioni possono essere legate a problemi di comunicazione, conflitti tra i membri del team, difficoltà nel gestire le aspettative o un elevato stress lavorativo.",
+    "cluster_id": 10
+  },
+  {
+    "nome": "Internal Movers",
+    "descrizione": "Il cluster 'Internal Movers' comprende dipendenti che hanno deciso di cambiare il proprio ruolo all'interno dell'azienda. Questo gruppo è composto da persone che desiderano sviluppare ulteriormente la propria carriera all'interno dell'organizzazione, spesso per ottenere nuove competenze, responsabilità o posizioni più strategiche. Questo cluster riflette una crescita interna e un impegno verso lo sviluppo professionale all'interno dell'azienda.",
+    "cluster_id": 9
+  },
+  {
+    "nome": "Cluster - Dissatisfazione e Crescita",
+    "descrizione": "Questo cluster comprende dipendenti che hanno deciso di lasciare l'azienda per diversi motivi, tra cui dissatisfazione con il ruolo o il lavoro e l'ambizione di crescita professionale. Molte persone di questo cluster hanno espresso la desiderosa ricerca di nuove opportunità che offrano un ambiente più stimolante e promettente per il proprio sviluppo e la crescita personale.",
+    "cluster_id": 7
+  }
+]
