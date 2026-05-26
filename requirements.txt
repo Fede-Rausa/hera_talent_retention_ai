@@ -2,6 +2,7 @@ python-dotenv
 numpy
 scipy
 pandas
+openpyxl
 matplotlib
 streamlit
 huggingface_hub
