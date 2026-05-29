@@ -30,11 +30,20 @@ else:
     
     # Usa il dataset normalmente per grafici o tabelle
     st.subheader("Filtro")
-    filtro = st.selectbox("Seleziona cluster", ['all'] + [str(i) for i in range(df['cluster_id'].nunique())])
-    
+
+    old_cluster = df['cluster_id']
+
+    old_new_cluster = {'2':'1', '3':'1', '12':'1', '4':'1', 
+                       '1':'2', '5':'2', '6':'2', '11':'2',
+                       '0':'3', '8':'3', '9':'3',
+                       '7':'4', '10':'4'}
+    df['cluster_id2'] = df['cluster_id'].astype(str).map(old_new_cluster).astype(int)
+
+    filtro = st.selectbox("Seleziona cluster", ['all'] + [str(i) for i in df['cluster_id2'].unique()])
+
     #if st.button("Applica filtro"):
     if filtro != 'all':
-        df = df[df['cluster_id'] == int(filtro)]
+        df = df[df['cluster_id2'] == int(filtro)]
         clu_des = st.session_state["clu_des"]
 
         chiavi = list(item['cluster_id'] for item in clu_des)
@@ -49,7 +58,13 @@ else:
             # Fallback di sicurezza: se la stringa era già corretta, la tiene così com'è
             descrizione_pulita = descrizione
 
-        st.markdown(f"Descrizione del cluster {filtro}: {descrizione}")
+        nome_cluster = clu_des[id]['nome']
+        st.markdown(f"""
+Nome del cluster: **{nome_cluster}**
+
+Descrizione del cluster {filtro}: 
+
+{descrizione}""")
 
     st.write(f'Number of samples: {df.shape[0]}')
 
@@ -82,11 +97,12 @@ else:
         # --- SECONDO GRAFICO: ISTOGRAMMA RAL (Sotto) ---
         with st.container(border=True):
             # Selezione dati per la RAL
-            ral_uscita = df['Ral di uscita_x']
+            ral_uscita = df['Ral di uscita_x'].str.replace(',', '.').astype(float)
             
+
             # Istogramma interattivo
             fig_ral = px.histogram(
-                ral_uscita,
+                np.round(ral_uscita),
                 x='Ral di uscita_x',
                 nbins=20,
                 title='Distribuzione della RAL di uscita',
@@ -310,7 +326,7 @@ else:
 
 
     if grafici == 'cluster_id':
-        colonna_df = 'cluster_id'
+        colonna_df = 'cluster_id2'
         with st.container(border=True):
             # Calcoliamo le frequenze e resettiamo l'indice per Plotly
             tab = df[colonna_df].value_counts().reset_index()
