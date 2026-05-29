@@ -366,7 +366,7 @@ else:
     result_show = result_df
 
 # Paginazione
-PAGE_SIZE = 100
+PAGE_SIZE = 1000
 n_pagine = max(1, len(result_show) // PAGE_SIZE + (1 if len(result_show) % PAGE_SIZE else 0))
 pagina = st.number_input(f"Pagina (1–{n_pagine})", min_value=1, max_value=n_pagine, value=1, step=1)
 start = (pagina - 1) * PAGE_SIZE
