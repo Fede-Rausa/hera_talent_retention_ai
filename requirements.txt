@@ -6,5 +6,6 @@ openpyxl
 matplotlib
 streamlit
 huggingface_hub
-statsmodels
+lifelines
+scikit-learn
 plotly
