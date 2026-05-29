@@ -97,7 +97,7 @@ Descrizione del cluster {filtro}:
         # --- SECONDO GRAFICO: ISTOGRAMMA RAL (Sotto) ---
         with st.container(border=True):
             # Selezione dati per la RAL
-            ral_uscita = df['Ral di uscita_x'].str.replace(',', '.').astype(float)
+            ral_uscita = df['Ral di uscita_x'].astype(str).str.replace(',', '.').astype(float)
             
 
             # Istogramma interattivo
