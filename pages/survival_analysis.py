@@ -182,9 +182,9 @@ def hr_barplot(hr_subset: pd.DataFrame, title: str):
 # ── Data loading ─────────────────────────────────────────────────────────────
 @st.cache_data
 def load_and_build():
-    df00 = pd.read_csv('streamlit_dashboard\\df_base_10300.csv', sep=';')
+    df00 = pd.read_csv('df_base_10300.csv', sep=';')
     df00['ID_PERSONA'] = df00['ID_PERSONA'].astype(str)
-    df11 = pd.read_excel('streamlit_dashboard\\Dati_dimissioni_con_cluster.xlsx')
+    df11 = pd.read_excel('Dati_dimissioni_con_cluster.xlsx')
     df11['ID_PERSONA'] = df11['ID_PERSONA'].astype(str)
     df = build_df1(df00, df11)
     df = df[df['DURATA'] > 0]   # rimuovi durata 0 o mancante
