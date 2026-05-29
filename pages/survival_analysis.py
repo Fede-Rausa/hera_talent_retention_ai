@@ -365,8 +365,17 @@ elif tipo_filter == "Solo eventi":
 else:
     result_show = result_df
 
+# Paginazione
+PAGE_SIZE = 100
+n_pagine = max(1, len(result_show) // PAGE_SIZE + (1 if len(result_show) % PAGE_SIZE else 0))
+pagina = st.number_input(f"Pagina (1–{n_pagine})", min_value=1, max_value=n_pagine, value=1, step=1)
+start = (pagina - 1) * PAGE_SIZE
+end   = start + PAGE_SIZE
+
+st.caption(f"Mostrando righe {start+1}–{min(end, len(result_show))} di {len(result_show):,}")
+
 st.dataframe(
-    result_show[['ID_PERSONA', 'Tipo', 'DURATA_osservata',
+    result_show.iloc[start:end][['ID_PERSONA', 'Tipo', 'DURATA_osservata',
                   'Mediana_stimata', 'Tempo_residuo_stimato', 'Partial_hazard']]
     .style.format({
         'DURATA_osservata':      '{:.2f}',
@@ -378,7 +387,7 @@ st.dataframe(
     hide_index=True
 )
 
-# Download
+# Download (sempre del dataset completo)
 csv_out = result_df.to_csv(index=False).encode('utf-8')
 st.download_button(
     "⬇️ Scarica previsioni CSV",
