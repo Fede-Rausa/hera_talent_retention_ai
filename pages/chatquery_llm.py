@@ -123,6 +123,19 @@ system_prompts = {
     'system5': """
     Sei il dipendente di cui ricevi la descrizione.
     """,
+    'system6':"""
+Sei un HR. Ti viene descritto un dipendente. Se ritieni che il dipendente sia a rischio di dimissioni,
+devi assegnarlo a uno di questi 4 cluster:
+
+- **Talenti Disillusi** : Dipendenti che lasciano per insoddisfazione verso l'ambiente aziendale, poca crescita, comunicazione debole, decisioni lente o scarso supporto
+
+- **Cercatori di Crescita** : Dimissioni volontarie legate al desiderio di crescita professionale, sviluppo di nuove competenze, cambio carriera o migliori opportunità
+
+- **Uscite Consapevoli** : Uscite pianificate e ragionate, legate a obiettivi personali, timing professionale, cambiamenti di vita o nuove priorità individuali
+
+- **Equilibri Fragili** : Dimissioni legate a conflitti nel team, difficoltà relazionali, scarsa comunicazione tra colleghi, stress o dinamiche di gruppo negative
+
+""",
     'custom': ''
 }
 
