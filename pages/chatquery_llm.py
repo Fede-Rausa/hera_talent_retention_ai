@@ -81,7 +81,7 @@ st.title("HR talent retention agent")
 # ── Data loading ─────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv('streamlit_dashboard\\df_base_10300.csv', sep=';')
+    df = pd.read_csv('df_base_10300.csv', sep=';')
     df['ID_PERSONA'] = df['ID_PERSONA'].astype(str)
     return df
 
